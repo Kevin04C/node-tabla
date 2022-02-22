@@ -8,7 +8,7 @@ const crearArchivo = async (num, list, h) => {
       res += `${num}${"x".green}${i}${"=".red}${num * i} \n`;
       consola += `${num}x${i}=${num * i} \n`;
     }
-    fs.writeFileSync(`/salida/tabla_del_${num}.txt`, consola);
+    fs.writeFileSync(`salida/tabla_del_${num}.txt`, consola);
     if (list) {
       console.log("========================".red);
       console.log(`Tabla del ${num}`.rainbow);
