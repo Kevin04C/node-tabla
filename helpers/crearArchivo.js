@@ -15,7 +15,7 @@ const crearArchivo = async (num, list, h) => {
       console.log("========================".blue);
       console.log(res);
     }
-    return `tabla_del_${num}.txt creada CORRECTAMENTE`.underline.red;
+    return `tabla_del_${num}.txt creada CORRECTAMENTE`.green;
   } catch (err) {
     throw err;
   }
